@@ -49,8 +49,8 @@ class MapHouse extends React.Component {
     super(props);
   }
   componentDidMount() {
-    let defaultX = 116.43244;
-    let defaultY = 39.929986;
+    let defaultX = 121.48130241985999;
+    let defaultY = 31.235156971414239;
     let defaultZoom = 12;
     
     // 创建Map实例
@@ -70,7 +70,7 @@ class MapHouse extends React.Component {
     // 设置缩略图控件。
     map.addControl(new BMap.OverviewMapControl());
     // 设置地图显示的城市 此项是必须设置的
-    map.setCurrentCity("北京"); 
+    map.setCurrentCity("上海"); 
     // 开启鼠标滚轮缩放
     map.enableScrollWheelZoom(true);
     let showInfo = () => {
